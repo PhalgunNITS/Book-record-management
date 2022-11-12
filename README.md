@@ -5,11 +5,11 @@ This ia a book recoad management API backend for the management of books.
 # Routs and End points
 
 ## /usres
-Post: Create a new user
-Get: Get all list of users
+Post: Create a new user ✔️
+Get: Get all list of users ✔️
 
 ## /users/{id}
-Get: Get a user by ID
+Get: Get a user by ID ✔️
 Put: Update a user by ID
 Detete: Delete a user by ID (Check if he/she still has an issued book.) (Is there any fine to be paid.)
 
