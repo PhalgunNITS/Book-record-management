@@ -28,7 +28,7 @@ Get: Ga=et a book by ID
 Put: Update a book by ID
 
 ## /books/issued
-Get: Get all issued books
+Get: Get all issued issued/by-user
 
 ## /books/issued/withFine
 Get: All issued books with fine
