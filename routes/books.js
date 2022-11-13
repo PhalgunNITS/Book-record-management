@@ -197,11 +197,6 @@ router.get("/fine-details/:id", (req, res) => {
 
     const data = {
         ...user,
-        subscriptionExpired: subscriptionExpiration < currentDate,
-        daysLeftForExpiration:
-            subscriptionExpiration <= currentDate
-                ? 0
-                : subscriptionExpiration - currentDate,
         fine:
             returnDate < currentDate
                 ? subscriptionExpiration <= currentDate

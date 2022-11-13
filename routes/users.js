@@ -186,12 +186,6 @@ router.get("/subscription-details/:id", (req, res) => {
             subscriptionExpiration <= currentDate
                 ? 0
                 : subscriptionExpiration - currentDate,
-        fine:
-            returnDate < currentDate
-                ? subscriptionExpiration <= currentDate
-                    ? 200
-                    : 100
-                : 0,
     };
 
     res.status(200).json({

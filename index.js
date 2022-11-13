@@ -1,10 +1,18 @@
 const express = require("express");
+const dotenv = require('dotenv');
+
 
 // Importing routes
+const DbConnection = require("./databaseConnection");
 const usersRouter = require("./routes/users")
 const booksRouter = require("./routes/books")
 
+
+dotenv.config();
+
 const app = express();
+
+DbConnection();
 
 const PORT = 8082;
 
@@ -29,4 +37,4 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running at port ${PORT}`);
-})
+});
